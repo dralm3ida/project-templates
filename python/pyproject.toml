@@ -1,0 +1,29 @@
+# Definition of build process of the package.
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project"
+version = "0.1.0"
+description = "Project template in Python"
+readme = "README.md"
+authors = [{ name = "André Rodrigues Almeida", email = "dralm3ida.dev@gmail.com" }]
+classifiers = [
+   "Programming Language :: Python",
+   "Programming Language :: Python :: 3",
+]
+keywords = ["project", "template", "setuptools"]
+dependencies = [
+
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+
+[project.urls]
+repository = "https://github.com/dralm3ida/project-templates"
+
+[project.scripts]
+project = "project.project:main"
